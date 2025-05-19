@@ -3,13 +3,12 @@
 const thumbs = document.querySelector('#thumbs');
 
 thumbs.addEventListener('click', (e) => {
-  e.preventDefault();
-
   const link = e.target.closest('.list-item__link');
 
   if (!link) {
     return;
   }
+  e.preventDefault();
 
   const largeImg = document.getElementById('largeImg');
 
